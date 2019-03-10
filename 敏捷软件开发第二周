@@ -1,0 +1,37 @@
+# 第6章 一次编程实践
+## 简述
+Bob Koss(RSK) 和 Bob Martin(RCM)在一个小型的应用程序中使用结对编程（pair programming）的方法，在创建该程序的过程中，使用了驱动测试的开发方法并进行了大量的重构。
+该程序是用来计算保龄球比赛得分的，接下来是这两个Bob于2000年末在一家旅馆中世纪编程情景的真实再现。
+
+## 6.1 保龄球比赛
+1 测试数据图表
+![Typical Bowling Score Card.png](https://upload-images.jianshu.io/upload_images/3515839-e5ea8e28aaa65966.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+2 绘制UML图
+![UML Diagram of Bowling Score Card.png](https://upload-images.jianshu.io/upload_images/3515839-2c1462f0805a177c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+3 创建Throw类的测试用例
+
+4 创建Frame类的测试用例
+
+5 创建Game类的测试用例
+  - 一次投掷测试用例 testOneThrows()
+  - 两次投掷测试用例 testTwoThrowsNoMark()
+  - 四次投掷测试用例（不包含补中和全中的情况） testFourThrowsNoMark()
+  - 补中情况的测试用例 testSimpleSpare()
+  - 全中情况的测试用例 testSimpleStrike()
+
+6 测试原先计分卡上的数据以及一些边界情况
+
+7 重构soceForFrame()函数
+
+8 增加scorer类
+
+9 重构adjustCurrentFrame()方法
+
+10 完成测试及重构工作，整个应用程序的工程完美结束。
+
+## 结论
+```你会发现最好的设计是在你首先编写测试，一小步一小步前进时逐渐形成的。```
+完成得按照书中的实际场景，把代码原样进行编写，并进行了重构。之前未接触过测试驱动开发，可能对这种开发方式的好处体会不是特别深刻，但是照着例子下来，还是觉得很有趣，并且觉得以后需要再花时间研究下TDD相关的内容。书中重构的例子也非常好，代码重构真的非常重要，以后在编程实践中同样需要提高重构能力。
+
