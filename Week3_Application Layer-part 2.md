@@ -114,4 +114,12 @@ CDN 通常采用两种不同的服务器安置原则：
 大多数CDN利用DNS截获和重定向请求。
 
 
+## 2.7 套接字编程：生成网络应用
+### 2.7.1 UDP套接字编程
+![The client-server application using UDP.png](https://upload-images.jianshu.io/upload_images/3515839-a38b58621502ac47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 2.7.2 TCP套接字编程
+![The TCP server process has two sockets.png](https://upload-images.jianshu.io/upload_images/3515839-aeddc5622429656c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![The client-server application using TCP.png](https://upload-images.jianshu.io/upload_images/3515839-94fd0b9aaf600aba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
